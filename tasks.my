@@ -1,0 +1,13 @@
+; tasks.my — durable task plan for coreboot (own fork of the upstream
+; coreboot firmware project).
+
+((tasks . (
+  ("COREBOOT-DOCUMENT-FORK-PURPOSE" . (
+    (priority . 5.0)
+    (capabilities . (documentation firmware bios))
+    (origin . coreboot)
+    (context . "wsm-os/docs/BIOS-F22E-RESEARCH.md and POWER-ON-SEQUENCE.md indicate active BIOS/firmware research; this fork of upstream coreboot (own remote juv4uk/coreboot, no AGENTS.md, no ecosystem doc) is presumably part of that same research surface but the connection is not documented anywhere.")
+    (description . "Write a short NOTICE/README addition stating why this fork exists, whether it tracks upstream or has local modifications, and how (if at all) it connects to the wsm-os hardware/BIOS research line -- so a future agent doesn't have to reverse-engineer the relationship from file timestamps.")
+    (done . ())
+  ))
+)))
